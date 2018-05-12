@@ -1,0 +1,622 @@
+/*
+* @Author: Administrator
+* @Date:   2018-02-09 14:11:47
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-05-09 15:49:30
+*/
+
+/**
+ * bootstrapæ‰©å±•
+ * http://blog.koalite.com/bbg/  æä¾›äº†ä¸€ä¸ªè‡ªå®šä¹‰çš„æŒ‰é’®ï¼ŒæŠŠé¢œè‰²å¡«å¥½ä¼šè‡ªåŠ¨ç”Ÿæˆä¸€æ®µä»£ç   ç²˜è´´å³å¯
+ */
+
+/* ç”¨äºŽä¿®é¥°å…è´¹ */
+
+.btn-main { 
+	color: #ffffff; 
+	background-color: #D92322; 
+	border-color: #DB3B43; 
+  } 
+   
+  .btn-main:hover, 
+  .btn-main:focus, 
+  .btn-main:active, 
+  .btn-main.active, 
+  .open .dropdown-toggle.btn-main { 
+	color: #ffffff; 
+	background-color: #D93222; 
+	border-color: #DB3B43; 
+  } 
+   
+  .btn-main:active, 
+  .btn-main.active, 
+  .open .dropdown-toggle.btn-main { 
+	background-image: none; 
+  } 
+   
+  .btn-main.disabled, 
+  .btn-main[disabled], 
+  fieldset[disabled] .btn-main, 
+  .btn-main.disabled:hover, 
+  .btn-main[disabled]:hover, 
+  fieldset[disabled] .btn-main:hover, 
+  .btn-main.disabled:focus, 
+  .btn-main[disabled]:focus, 
+  fieldset[disabled] .btn-main:focus, 
+  .btn-main.disabled:active, 
+  .btn-main[disabled]:active, 
+  fieldset[disabled] .btn-main:active, 
+  .btn-main.disabled.active, 
+  .btn-main[disabled].active, 
+  fieldset[disabled] .btn-main.active { 
+	background-color: #D92322; 
+	border-color: #DB3B43; 
+  } 
+   
+  .btn-main .badge { 
+	color: #D92322; 
+	background-color: #ffffff; 
+  }
+
+  /* å°†bootstrapé‡Œçš„navbar-defaultæ”¹ä¸ºè‡ªå·±ç”¨çš„ */
+  .navbar-main {
+	background-color: #fff;
+	border-color: #f5f5f5;
+	margin-bottom: 0;
+	}
+  .navbar-main .navbar-brand {
+	color: #777;
+	height:80px;
+  }
+  .navbar-main .navbar-brand:hover,
+  .navbar-main .navbar-brand:focus {
+	color: #5e5e5e;
+	background-color: transparent;
+  }
+  .navbar-main .navbar-text {
+	color: #777;
+  }
+  .navbar-main .navbar-nav > li > a {
+	color: #777;
+	line-height:  50px;
+	font-size:  14px;
+	}
+  .navbar-main .navbar-nav > li > a:hover,
+  .navbar-main .navbar-nav > li > a:focus {
+	color: #333;
+	background-color: transparent;
+	border-bottom: 2px solid #E92322;
+	}
+  .navbar-main .navbar-nav > .active > a,
+  .navbar-main .navbar-nav > .active > a:hover,
+  .navbar-main .navbar-nav > .active > a:focus {
+	color: #555;
+	background-color: #fff;
+	border-bottom: 2px solid #E92322;
+	}
+  .navbar-main .navbar-nav > .disabled > a,
+  .navbar-main .navbar-nav > .disabled > a:hover,
+  .navbar-main .navbar-nav > .disabled > a:focus {
+	color: #ccc;
+	background-color: transparent;
+  }
+  .navbar-main .navbar-toggle {
+	border-color: #ddd;
+	margin-top:  23px;
+	margin-bottom:  23px;
+	}
+  .navbar-main .navbar-toggle:hover,
+  .navbar-main .navbar-toggle:focus {
+	background-color: #ddd;
+  }
+  .navbar-main .navbar-toggle .icon-bar {
+	background-color: #888;
+  }
+  .navbar-main .navbar-collapse,
+  .navbar-main .navbar-form {
+	border-color: #e7e7e7;
+  }
+  .navbar-main .navbar-nav > .open > a,
+  .navbar-main .navbar-nav > .open > a:hover,
+  .navbar-main .navbar-nav > .open > a:focus {
+	color: #555;
+	background-color: #e7e7e7;
+  }
+  @media (max-width: 767px) {
+	.navbar-main .navbar-nav .open .dropdown-menu > li > a {
+	  color: #777;
+	}
+	.navbar-main .navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-main .navbar-nav .open .dropdown-menu > li > a:focus {
+	  color: #333;
+	  background-color: transparent;
+	}
+	.navbar-main .navbar-nav .open .dropdown-menu > .active > a,
+	.navbar-main .navbar-nav .open .dropdown-menu > .active > a:hover,
+	.navbar-main .navbar-nav .open .dropdown-menu > .active > a:focus {
+	  color: #555;
+	  background-color: #e7e7e7;
+	}
+	.navbar-main .navbar-nav .open .dropdown-menu > .disabled > a,
+	.navbar-main .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+	.navbar-main .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+	  color: #ccc;
+	  background-color: transparent;
+	}
+  }
+  .navbar-main .navbar-link {
+	color: #777;
+  }
+  .navbar-main .navbar-link:hover {
+	color: #333;
+  }
+  .navbar-main .btn-link {
+	color: #777;
+  }
+  .navbar-main .btn-link:hover,
+  .navbar-main .btn-link:focus {
+	color: #333;
+  }
+  .navbar-main .btn-link[disabled]:hover,
+  fieldset[disabled] .navbar-main .btn-link:hover,
+  .navbar-main .btn-link[disabled]:focus,
+  fieldset[disabled] .navbar-main .btn-link:focus {
+	color: #ccc;
+	}
+	
+	/* 产品部分扩展 */
+	.panel-products {
+		border-color: #ddd;
+	}
+	.panel-products > .panel-heading {
+		color: #333;
+		background-color: #f5f5f5;
+		border-color: #ddd;
+	}
+	.panel-products > .panel-heading + .panel-collapse > .panel-body {
+		border-top-color: #ddd;
+	}
+	
+
+/**
+ * å…¬å…±éƒ¨åˆ†
+ */
+
+body{
+	font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+ul li{
+	list-style:none;
+}
+
+/*字体图标  */
+@font-face {
+	font-family:'weijinsuo';
+	src:url("../font/MiFie-Web-Font.eot") format('embedded-opentype'),url("../font/MiFie-Web-Font.svg") format('svg'),
+	url("../font/MiFie-Web-Font.ttf") format('truetype'),
+	url('../font/MiFie-Web-Font.woff') format('woff');
+}
+
+[class^="icon-"],[class*=" icon"]{
+	font-family: weijinsuo;
+	font-style: normal;
+}
+
+.icon-mobilephone::before {
+  content: "\e908";
+  font-size: 13px;
+}
+
+.icon-telephone::before {
+  content: "\e909";
+  font-size: 15px;
+}
+.icon-icon::before {
+    content: "\e920";
+}
+.icon-logo::before {
+    content: "\e93e";
+}
+
+/**
+ * å¤´éƒ¨åŒºåŸŸ
+ */
+#header{
+
+	
+}
+
+#header > .topbar{
+	height: 40px;
+	border-bottom: 1px solid #c0c0c0;
+	line-height: 40px;
+}
+
+#header > .topbar > .container > .row > div{
+	height: 40px;
+	font-size: 12px;
+	color: #888
+}
+/* åŠ å·é€‰æ‹©å™¨ï¼Œä»¥åŽä¸­é—´ç«–çº¿å¯ä»¥è¿™ä¹ˆä½¿ç”¨ */
+#header > .topbar > .container > .row > div + div{
+	border-left: 1px solid #c0c0c0;
+}
+
+#header .mobile-link{
+	font-size: 12px;
+	color: #888
+}
+
+#header .col-md-2 > a {
+	font-size: 12px;
+	color: #888
+}
+
+#header .mobile-link > img{
+	display: none;
+	  position: absolute;
+	  top: 30px;
+	  z-index: 1001;
+}
+#header .mobile-link:hover{
+	text-decoration: none;
+}
+
+#header .mobile-link:hover > img{
+	
+	display: block;
+}
+
+#header .icon-icon{
+  font-size: 50px;
+  color:#E92322;
+  line-height:  50px;
+  vertical-align: middle;
+}
+#header .icon-logo{
+  font-size: 30px;
+  color: #333;
+  line-height:  50px;
+  vertical-align: middle;
+}
+
+/* 轮播图部分 */
+#main_ad{
+	
+}
+/* 这里的高度不能写死了，原因是变成小图之后，就不应该有这么大的高度，否则会出现两层图片 */
+/* 可以用媒体查询解决这个问题 */
+ #main_ad > .carousel-inner > .item{
+	/* height: 410px; */
+	 background-position: center center;
+	background-repeat: no-repeat ;
+	
+	background-size: cover;
+}
+@media(min-width:768px){
+	#main_ad > .carousel-inner > .item{
+		height: 410px;
+	}
+}
+
+/*还有一个问题是当小图到大图转换的时候，会有一下出现两层，原因是小图图片不足以撑大  */
+/* 可以再单独设置，让小图的图片百分百 */
+#main_ad > .carousel-inner > .item > img{
+	width:100%;
+}
+
+/* 轮播图部分结束 */
+
+/* 特色介绍部分开始 */
+#feature{
+	margin-top:50px;
+	border-bottom: 1px solid #c5c5c5;
+}
+
+.icon-uniE907:before {
+	content: "\e907";
+}
+.icon-uniE903:before {
+	content: "\e903";
+}
+.icon-uniE901:before {
+	content: "\e901";
+}
+.icon-uniE900:before {
+	content: "\e900";
+}
+.icon-uniE904:before {
+	content: "\e904";
+}
+.icon-uniE902:before {
+	content: "\e902";
+}
+#feature i{
+	font-size: 34px;
+}
+#feature a{
+	color: #333;
+	text-decoration: none;
+}
+#feature a:hover{
+	color: #E92322;
+}
+#feature > .container > .row > div{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+/* 立即预约开始 */
+#appointment{
+	border-bottom: 1px solid #c5c5c5
+}
+#appointment > .container > .pull-left > i,
+#appointment > .container > .pull-right > i{
+	font-size: 20px;
+}
+.icon-uniE906:before {
+	content: "\e906";
+}
+.icon-uniE905:before {
+	content: "\e905";
+}
+#appointment > .container > .pull-left > span{
+	color: #E92322;
+}
+#appointment > .container > p{
+	line-height: 50px;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 16px;
+}
+#appointment > .container > .pull-left > a{
+	color: #E92322;
+	border-bottom:1px dashed #E92322;
+}
+#appointment > .container > .pull-right>a{
+	color: #333;
+	font-size: 16px;
+}
+/* 立即预约结束 */
+
+/* 产品推荐开始 */
+
+#products{
+	background-color: #f0f0f0;
+	padding:30px 0;
+}
+#products > .container >.ul-wrapper > .nav-tabs > li > a{
+	text-decoration: none;
+	font-size: 16px;
+	color: #333;
+}
+#products > .container >.ul-wrapper > .nav-tabs > li.active > a{
+	background-color: transparent;
+	border:0;
+	border-bottom: 4px solid #D92322;
+}
+#products > .container  >.ul-wrapper > .nav-tabs > li > a:hover{
+	background-color: transparent;
+	color:#E92322
+}
+#products > .container >.ul-wrapper > .tab-content{
+	
+	margin-top:15px;
+}
+
+/* 如果写死的话，在大屏幕中也会有滚动出现，所以不用这种方法，用js控制的方法 
+#products >.container>.ul-wrapper{
+	overflow-x: scroll;  
+} */
+/* 内容部分 */
+.panel-products{
+	border: 0;
+  border-radius: 0;
+  box-shadow: 1px 1px 5px #ccc
+}
+.panel-products.actived{
+	background-color: #E92322;
+	color:#fff
+}
+.panel-products.gred{
+	background-color: #d0d0d0;
+}
+.panel-products.actived::before{
+	content: '\e915';
+	font-family: weijinsuo;
+	color: #fff;
+	font-size: 38px;
+	position: absolute;
+	top: -7px;
+	left:15px;
+
+
+}
+.panel-products > .panel-heading{
+	width: 120px;
+	height: 150px;
+	padding-top: 62px;
+	float: right;
+	background-color: transparent;
+	border-color: transparent;
+	text-align: center;
+	border-left: 1px dashed #fff;
+	position: relative;
+	
+}
+.panel-products > .panel-heading::after,
+.panel-products > .panel-heading::before{
+	content: ' ';
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	background-color: #f0f0f0;
+	position: absolute;
+
+}
+.panel-products > .panel-heading::before {
+  top: -8px;
+  left: -8px;
+}
+
+.panel-products > .panel-heading::after {
+  bottom: -8px;
+  left: -8px;
+  box-shadow: 0 2px 1px #ccc inset;
+}
+.panel-products .panel-heading sub {
+  color: #E92322;
+}
+.panel-products .panel-heading strong {
+	color: #E92322;
+	font-size: 25px;
+}
+
+.panel-products .panel-heading span {
+	font-size: 10px;
+	color: #333;
+}
+
+.panel-products.actived .panel-heading  sub,
+.panel-products.actived .panel-heading  strong,
+.panel-products.actived .panel-heading  span {
+  color: #fff;
+}
+/* 提示小工具 */
+.panel-products > .panel-heading .tooltips{
+	position: absolute;
+	top: 31px;
+	left: 0;
+	width: 100%;
+	text-align: center
+}
+.panel-products > .panel-heading .badge {
+	background-color: transparent;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 0;
+	padding: 2px;
+}
+.panel-products > .panel-heading .badge-jing{
+	border-color: #D92322;
+	color: #333;
+	
+}
+.panel-products > .panel-heading .badge-hu{
+	border-color: #399;
+	color: #333;
+}
+
+.panel-products > .panel-body{
+
+	margin-right: 120px;
+	height: 150px;	
+}
+/*  */
+
+.panel-products .panel-body h5 {
+  font-size: 16px;
+	margin-top: 0;
+	margin-left:6px;
+}
+
+.panel-products .panel-body dt {
+  font-size: 10px;
+  color: #c0c0c0;
+}
+
+.panel-products .panel-body dd {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+/* 产品推荐结束 */
+
+/* 新闻列表开始 */
+#news{
+	padding: 40px 0;
+}
+#news .row .news-title{
+	font-size: 20px;
+	border-bottom: 1px dashed #999;
+	text-align: center;
+	padding-bottom: 12px;
+	position: relative;
+}
+#news .row .news-title::after{
+	content: ' ';
+	width: 10px;
+	height: 10px;
+	border:1px solid #777;
+	border-radius: 5px;
+	position: absolute;
+	right: -9px;
+	bottom: -5px;
+	background-color: #fff;
+}
+#news .nav-pills li.active a{
+	background-color: #D93222;
+}
+#news .nav-pills li a:hover{
+	background-color: #D93222;
+}
+#news .nav-pills li a{
+	background-color: rgb(197, 197, 192);
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	text-align: center;
+	padding: 15px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+#news .tab-pane li a{
+	display: inline-block;
+	color: #333;
+	font-size: 16px;
+	margin-bottom: 10px;
+	text-decoration: none;
+}
+
+/* 变小后让新闻列表横向显示 */
+@media(max-width:970px){
+	#news .nav-pills li {
+		float: left;
+		margin-top: 25px;
+	}
+}
+
+
+ /* 新闻-字体图标 */
+ .icon-news01:before {
+  content: "\e90e";
+  font-size: 28px;
+  color: #EAEAEA;
+}
+
+.icon-news02:before {
+  content: "\e90f";
+  font-size: 28px;
+  color: #EAEAEA;
+}
+
+.icon-news03:before {
+  content: "\e910";
+  font-size: 28px;
+  color: #EAEAEA;
+}
+
+.icon-news04:before {
+  content: "\e911";
+  font-size: 28px;
+  color: #EAEAEA;
+}
+#footer{
+	height: 200px;
+}
+
+/* 测试 */
+/* #feature > .container > .row > div :nth-of-type(2n){
+	background-color: red;
+} */
+
