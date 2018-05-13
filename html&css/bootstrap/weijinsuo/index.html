@@ -36,13 +36,15 @@
 				</div>
 				<div class="col-md-3 text-center">
 					<a href="#" class="btn btn-main btn-sm">免费注册</a>
-					<a href="" class="btn btn-link btn-sm">登录</a>
+					<!-- 后面的data-toggle等属性是设置模态框用的 -->
+					<a href="" class="btn btn-link btn-sm" data-toggle="modal" data-target="#myModal">登录</a>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- 原来的是navbar-default，可以改为自己用的名字，这里改成navbar-main,下次要改就可以在自己的css样式中改了，不要在bootstrap上改 -->
-	<nav class="navbar navbar-main navbar-static-top">
+	<!-- 加了data-spy这些属性后，然后设置top:0;width:100%;就可以实现吸顶效果了 -->
+	<nav class="navbar navbar-main navbar-static-top" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
 		<div class="container">
 			<div class="navbar-header">
 				<!-- 这里的button作用是汉堡菜单，即在屏幕变小的时候列表能够收起展开，其中的data属性就是这个作用，data-target与下文的列表id相对应 -->
@@ -237,7 +239,7 @@
 
 		<!-- 选项 -->
 		<div class="ul-wrapper">
-			<!-- 多加一个div是为了适配小屏幕时的滚动列表 -->
+			<!-- 多加一个div是为了适配小屏幕时有滚动条 -->
 			<ul class="nav nav-tabs" role="tablist">
 				<li role="presentation" class="active">
 					<a href="#tab-one" aria-controls="tab-one" role="tab" data-toggle="tab">特别推荐</a>
@@ -2422,82 +2424,277 @@
 			</div>
 			<div class="col-md-1">
 				<ul class="nav nav-pills nav-stacked">
-					<li role="presentation" class="active title"><a href="#new1" aria-controls="new1"  data-toggle="tab" data-news-title="全部新闻"><i class="icon-news01"></i></a></li>
-					<li role="presentation" class="title"><a href="#new2" aria-controls="new2"  data-toggle="tab" data-news-title="微金所头条"><i class="icon-news02"></i></a></li>
-					<li role="presentation" class="title"><a href="#new3" aria-controls="new3"  data-toggle="tab" data-news-title="行业资讯"><i class="icon-news03"></i></a></li>
-					<li role="presentation" class="title"><a href="#new4" aria-controls="new4"  data-toggle="tab" data-news-title="热门话题"><i class="icon-news04"></i></a></li>
+					<li role="presentation" class="active title">
+						<a href="#new1" aria-controls="new1" data-toggle="tab" data-news-title="全部新闻">
+							<i class="icon-news01"></i>
+						</a>
+					</li>
+					<li role="presentation" class="title">
+						<a href="#new2" aria-controls="new2" data-toggle="tab" data-news-title="微金所头条">
+							<i class="icon-news02"></i>
+						</a>
+					</li>
+					<li role="presentation" class="title">
+						<a href="#new3" aria-controls="new3" data-toggle="tab" data-news-title="行业资讯">
+							<i class="icon-news03"></i>
+						</a>
+					</li>
+					<li role="presentation" class="title">
+						<a href="#new4" aria-controls="new4" data-toggle="tab" data-news-title="热门话题">
+							<i class="icon-news04"></i>
+						</a>
+					</li>
 				</ul>
 			</div>
 			<div class="col-md-7">
-					<div class="tab-content">
-							<div role="tabpanel" class="tab-pane fade in active" id="new1">
-								<ul>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>									
-								</ul>
-							</div>
-							<div role="tabpanel" class="tab-pane fade" id="new2">
-								<ul>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>									
-								</ul>
-							</div>
-							<div role="tabpanel" class="tab-pane fade" id="new3">
-								<ul>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>									
-								</ul>
-							</div>
-							<div role="tabpanel" class="tab-pane fade" id="new4">
-								<ul>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>
-									<li><a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a></li>									
-								</ul>
-							</div>
-					</div>	
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane fade in active" id="new1">
+						<ul>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+						</ul>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="new2">
+						<ul>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+						</ul>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="new3">
+						<ul>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+						</ul>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="new4">
+						<ul>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+							<li>
+								<a href="#">【微还款】2017年1月3日共23个项目按时完成全部还款</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
 <!-- /新闻列表结束 -->
-<!-- 合作伙伴开始 -->
-<section></section>
-<!-- /合作伙伴结束 -->
 <!-- 脚注区域开始 -->
-<footer id="footer"></footer>
+<footer id="footer">
+	<div class="container  hidden-sm hidden-xs">
+		<h5 class="text-center">合作伙伴</h5>
+		<ul>
+			<li>
+				<a href="">
+					<i class="icon-uniE930"></i>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<i class="icon-uniE92F"></i>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<i class="icon-uniE92E"></i>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<i class="icon-uniE92A"></i>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<i class="icon-uniE929"></i>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<i class="icon-uniE931"></i>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<i class="icon-uniE92C"></i>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<i class="icon-uniE92B"></i>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<i class="icon-uniE92D"></i>
+				</a>
+			</li>
+
+		</ul>
+	</div>
+
+</footer>
 <!-- /脚注区域结束 -->
+<!-- 模态框部分 -->
+<section>
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="myModalLabel">登录</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+							<div class="col-sm-10">
+								<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+							<div class="col-sm-10">
+								<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Remember me
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<button type="submit" class="btn btn-default">Sign in</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 <script src="lib/jquery/jquery.js"></script>
 <script src="lib/bootstrap/js/bootstrap.js"></script>
 <script src="js/main.js"></script>

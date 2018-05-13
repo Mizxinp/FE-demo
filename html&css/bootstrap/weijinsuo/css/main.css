@@ -7,10 +7,10 @@
 
 /**
  * bootstrapæ‰©å±•
- * http://blog.koalite.com/bbg/  æä¾›äº†ä¸€ä¸ªè‡ªå®šä¹‰çš„æŒ‰é’®ï¼ŒæŠŠé¢œè‰²å¡«å¥½ä¼šè‡ªåŠ¨ç”Ÿæˆä¸€æ®µä»£ç   ç²˜è´´å³å¯
+ * http://blog.koalite.com/bbg/  可以去这上面得到自己想要的button颜色等
  */
 
-/* ç”¨äºŽä¿®é¥°å…è´¹ */
+
 
 .btn-main { 
 	color: #ffffff; 
@@ -58,11 +58,13 @@
 	background-color: #ffffff; 
   }
 
-  /* å°†bootstrapé‡Œçš„navbar-defaultæ”¹ä¸ºè‡ªå·±ç”¨çš„ */
+  /* bootstrap有navbar-default，可以将它改了，以后要改样式，可以再自己的css中修改来覆盖bootstrap上的 */
   .navbar-main {
 	background-color: #fff;
 	border-color: #f5f5f5;
 	margin-bottom: 0;
+	top: 0;
+  width: 100%;
 	}
   .navbar-main .navbar-brand {
 	color: #777;
@@ -179,7 +181,7 @@
 	
 
 /**
- * å…¬å…±éƒ¨åˆ†
+ * 正文部分
  */
 
 body{
@@ -219,7 +221,7 @@ ul li{
 }
 
 /**
- * å¤´éƒ¨åŒºåŸŸ
+ * 头部部分
  */
 #header{
 
@@ -237,7 +239,7 @@ ul li{
 	font-size: 12px;
 	color: #888
 }
-/* åŠ å·é€‰æ‹©å™¨ï¼Œä»¥åŽä¸­é—´ç«–çº¿å¯ä»¥è¿™ä¹ˆä½¿ç”¨ */
+/* 加号选择器的用法 */
 #header > .topbar > .container > .row > div + div{
 	border-left: 1px solid #c0c0c0;
 }
@@ -405,10 +407,10 @@ ul li{
 	margin-top:15px;
 }
 
-/* 如果写死的话，在大屏幕中也会有滚动出现，所以不用这种方法，用js控制的方法 
-#products >.container>.ul-wrapper{
+/* 如果写死的话，在大屏幕中也会有滚动出现，所以不用这种方法，用js控制的方法*/ 
+/* #products >.container>.ul-wrapper{
 	overflow-x: scroll;  
-} */
+}  */
 /* 内容部分 */
 .panel-products{
 	border: 0;
@@ -611,12 +613,101 @@ ul li{
   font-size: 28px;
   color: #EAEAEA;
 }
+
+/* footer部分 */
 #footer{
-	height: 200px;
+	padding: 30px;
+	border-top: 1px solid #c0c0c0;
+}
+#footer h5{
+	font-size: 25px;
+}
+#footer ul {
+	padding: 0;
+	margin: 0;
 }
 
-/* 测试 */
-/* #feature > .container > .row > div :nth-of-type(2n){
-	background-color: red;
-} */
+#footer ul li{
+	list-style: none;
+	float: left;
+	margin-right: 73px;
+}
+#footer ul li a{
+	display: inline-block;
+	text-decoration: none;
+	font-size: 50px;
+    color: #c0c0c0;
+}
+.icon-uniE930:hover {
+  color: #df3232;
+}
+
+.icon-uniE930:before {
+  content: "\e946";
+}
+
+.icon-uniE92F:hover {
+  color: #e8380d;
+}
+
+.icon-uniE92F:before {
+  content: "\e92f";
+}
+
+.icon-uniE92E:hover {
+  color: #ed6f00;
+}
+
+.icon-uniE92E:before {
+  content: "\e92e";
+}
+
+.icon-uniE92A:hover {
+  color: #159f69;
+}
+
+.icon-uniE92A:before {
+  content: "\e92a";
+}
+
+.icon-uniE929:hover {
+  color: #07569e;
+}
+
+.icon-uniE929:before {
+  content: "\e929";
+}
+
+.icon-uniE931:hover {
+  color: #004098;
+}
+
+.icon-uniE931:before {
+  content: "\e931";
+}
+
+.icon-uniE92C:hover {
+  color: #d32019;
+}
+
+.icon-uniE92C:before {
+  content: "\e92c";
+}
+
+.icon-uniE92B:hover {
+  color: #3eac4a;
+}
+
+.icon-uniE92B:before {
+  content: "\e92b";
+}
+
+.icon-uniE92D:hover {
+  color: #2bb289;
+}
+
+.icon-uniE92D:before {
+  content: "\e92d";
+}
+
 

@@ -40,24 +40,44 @@ $(function () {
     var $elem = $('.nav-tabs')
     //获取宽度
     var width = 30;
-    $elem.children().each(function(index,element){
+    $elem.children().each(function (index, element) {
         width += element.clientWidth;
     })
-    /* 这样写窗口变大后也会有滚动条
-    $elem.css('width',width) */
+    /* 这样写窗口变大后也会有滚动条*/
+    //$elem.css('width',width) 
 
     //优化
-        if(width>$(window).width()){
-            $elem.css('width',width).parent().css('overflow','scroll');
-        } 
+    if (width > $(window).width()) {
+        $elem.css('width', width).parent().css('overflow-x', 'scroll');
+    }
     //
-
 
     //新闻部分点击li相应的标题做出更改
     var $newsTitle = $('.title a');
-    $newsTitle.on('click',function(){
+    $newsTitle.on('click', function () {
         var $this = $(this)
         var title = $this.data('news-title');
         $('.news-title').text(title);
     })
+
+    /* 移动端轮播图的左滑又滑功能 */
+    var $carousel = $('.carousel');
+    var startX, endX;
+    var offset = 50; //在一定的范围内不滑动
+    //获取一下方向,触碰屏幕时的位置
+    $carousel.on('touchstart', function (e) {
+        //console.log(e.originalEvent.touches[0])
+        startX = e.originalEvent.touches[0].clientX;
+    })
+    $carousel.on('touchmove', function (e) {
+        // console.log(e.originalEvent.touches[0].clientX)
+        endX = e.originalEvent.touches[0].clientX;
+    })
+    $carousel.on('touchend', function () {
+        if (offset < Math.abs(startX - endX)) {
+            $(this).carousel(startX > endX ? 'next' : 'prev');
+        }
+
+    })
+    //触发向左向右
 })
