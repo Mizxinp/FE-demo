@@ -1,0 +1,156 @@
+/* *
+ *公共样式
+ */
+ *,
+ ::before,
+ ::after{
+     margin: 0;
+     padding: 0;
+    /*清除点击默认的高亮效果*/
+     -webkit-tap-highlight-color: transparent;
+    /*以你的border开始计算你的宽度*/
+     -webkit-box-sizing: border-box;
+ 
+ }
+ 
+ body{
+     font-size: 14px;
+     font-family: "Microsoft YaHei",sans-serif;/*第二个是手机的一个默认的字体*/
+     color: #000;
+ }
+ 
+ a{
+     text-decoration: none;
+     color: #000;
+ }
+ 
+ ul{
+     list-style: none;
+ }
+ 
+ input,textarea{
+     border: none;
+     resize: none;
+     outline: none;/*清除选中效果*/
+ 
+     -webkit-appearance: none;/*清楚浏览器默认的样式*/
+ }
+ 
+ /*清除浮动*/
+ .clearfix::before,
+ .clearfix::after{
+     content: ".";
+     display: block;
+     height: 0;
+     line-height: 0;
+     visibility: hidden;
+     clear: both;
+ }
+ 
+ [class^="icon-"]{
+     background: url("../imgs/sprites.png") no-repeat;
+     background-size: 200px 200px;
+ }
+
+
+ /* *
+ *头部部分
+ */
+ .layout{
+    min-width: 300px;
+    max-width: 640px;
+    margin:0 auto;
+    position: relative;
+}
+#header{
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+#header > .header-content{
+    min-width: 300px;
+    max-width: 640px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: rgba(201,21,35,0.85);
+}
+#header > .header-content > .icon-logo{
+    width: 60px;
+    height: 30px;
+    background-position: 0 -103px;
+    position: absolute;
+    top: 4px;
+    left: 10px;
+
+}
+#header > .header-content > form{
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    padding-left: 80px;
+    padding-right: 65px;
+    
+    position: relative;
+}
+#header > .header-content > form > .icon-search{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-position: -60px -109px;
+    position: absolute;
+    top: 10px;
+    left: 85px
+}
+#header > .header-content > form > input{
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    padding-left: 30px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+#header > .header-content > .login{
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* 轮播图部分 */
+#ad{
+    height: 275px;
+    position: relative;
+}
+#ad > .imgs>li>img{
+    display: inline-block;
+    width: 100%;
+    
+}
+#ad > .imgs > li{
+
+}
+#ad > .circle{
+    position: absolute;
+    left: 50%;
+    margin-left: -67px;
+    bottom: 20px;
+
+}
+#ad > .circle >li{
+    float: left;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    padding-right: 5px;
+    margin-right: 10px;
+    border:1px solid #fff;
+}
