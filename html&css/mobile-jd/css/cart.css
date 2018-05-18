@@ -1,0 +1,44 @@
+
+
+.cart-header{
+    border-bottom: 1px solid #e0e0e0
+}
+#jd-header > h3{
+
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: inherit;
+    line-height: 35px;
+}
+
+/* 安全提示 */
+#safe-remind{
+    width: 100%;
+    line-height: 35px;
+    height: 35px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+#safe-remind > p::before{
+    content: ' ';
+    width: 18px;
+    height: 18px;
+    background-image: url("../imgs/safe_icon.png");
+    background-size: 18px 18px;
+    position: absolute;
+    top: 8px;
+    left: 64px;
+}
+
+/* 公用复选框 */
+.check-box > .check{
+    width: 20px;
+    height: 20px;
+    background: url("../imgs/shop-icon.png") no-repeat;
+    background-size: 50px 100px;
+    background-position: 0 0;
+}

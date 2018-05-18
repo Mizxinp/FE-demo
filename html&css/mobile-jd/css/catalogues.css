@@ -1,63 +1,94 @@
-#jd-header{
-    width: 100%;
-    height: 30px;
-    position: relative;
-}
-#jd-header  .icon-back{
-    width: 20px;
-    height: 20px;
-    background-position: -20px 0;
+body{
     position: absolute;
-    top: 5px;
-    left: 8px;
-    display: inline-block;
-}
-#jd-header > form{
-    display: inline-block;
     width: 100%;
-    height: 30px;
-    padding-right: 35px;
-    padding-left: 35px;
-    position: relative;
+    height: 100%;
 }
-#jd-header > form >.icon-search{
-    width: 20px;
-    height: 20px;
-    background-position: -82px 0;
-    position: absolute;
-    top: 7px;
-    left: 42px;
-    display: inline-block;
-   
-}
-#jd-header > form > input{
-    width: 100%;
-    height: 30px;
-    font-size: 12px;
-    line-height: 30px;
-    padding-left: 34px
-}
-#jd-header img{
-    display: inline-block;
-    width: 16px;
-    height: 5px;
-    position: absolute;
-    top: 10px;
-    right: 16px;
-}
+
+
 
 /* 商品分类主体部分 */
 #commodity-main{
+    width: 100%;
+    height: 100%;
     margin-top: 10px;
+    position: relative;
 }
 #commodity-main > .commodity-list{
     width: 86px;
-    height: 575px;
+    height: 100%;
     overflow: hidden;
-    float: left;
     margin-right: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
 }
-#commodity-main > .commodity-list
+#commodity-main > .commodity-list li{
+    width: 86px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+#commodity-main > .commodity-list li.list-first a{
+    color: #f00;
+}
 #commodity-main > .commodity-detail{
     width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-left: 86px;
+}
+#commodity-main > .commodity-detail .commodity-detail-box{
+    padding: 10px 12px;
+}
+#commodity-main > .commodity-detail  .commodity-detail-banner img{
+   
+    width: 100%;
+}
+#commodity-main > .commodity-detail  .hot-catagory{
+    margin-top: 10px;
+}
+#commodity-main > .commodity-detail  .hot-catagory  .hot-catagory-header{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+#commodity-main > .commodity-detail  .hot-catagory h4{
+    columns: #333;
+    float: left;
+}
+#commodity-main > .commodity-detail  .hot-catagory-header a{
+    float: right;
+}
+#commodity-main > .commodity-detail  .hot-catagory .rank{
+    background-image: url(../imgs/rank.png);
+    width: 12px;
+    background-size: 12px 12px;
+    height: 12px;
+    display: inline-block;
+}
+#commodity-main > .commodity-detail  .hot-catagory .rank-arrows{
+    background-image: url(../imgs/right.png);
+    width: 12px;
+    background-size: 12px 12px;
+    height: 12px;
+    display: inline-block;
+}
+
+#commodity-main > .commodity-detail   .hot-catagory-bottom li{
+    width: 33.33333%;
+    float: left;
+    text-align: center;
+}
+#commodity-main > .commodity-detail .hot-catagory-bottom li img{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    
+}
+#commodity-main > .commodity-detail .hot-catagory-bottom  li span{
+    display: block;
+    font-size: 12px;
+    margin-top: -7px;
+    height: 22px;
 }
