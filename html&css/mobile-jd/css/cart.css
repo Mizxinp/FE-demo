@@ -35,10 +35,268 @@
 }
 
 /* 公用复选框 */
-.check-box > .check{
+
+ .check{
     width: 20px;
     height: 20px;
     background: url("../imgs/shop-icon.png") no-repeat;
     background-size: 50px 100px;
     background-position: 0 0;
+}
+.check[checked]{
+    background-position: -25px 0;
+}
+
+/* 店铺信息 */
+#detail-info > .shop{
+    margin-top: 10px;
+}
+#detail-info > .shop>.shop-header{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+}
+#detail-info > .shop>.shop-header > .check-box{
+    position: absolute;
+    height: 35px;
+    width: 40px;
+}
+#detail-info > .shop>.shop-header > .check-box >.check{
+  position: absolute;
+  top: 8px;
+  left: 10px;
+    
+}
+#detail-info > .shop>.shop-header > .shop-name {
+    padding-left: 40px;
+    width: 100%;
+    height: 35px;
+}
+#detail-info > .shop>.shop-header > .shop-name > .logo{
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+#detail-info > .shop>.shop-header > .shop-name > .name{
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    float: left;
+}
+#detail-info > .shop>.shop-header > .shop-name > .discount{
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    color: crimson;
+    float: right;
+    margin-right: 10px;
+}
+
+/* 店铺商品信息 */
+.shop > .shop-commodity{
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+   
+}
+.shop > .shop-commodity > .commodity-check-box{
+    width: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.shop > .shop-commodity > .commodity-check-box > .check{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+.shop > .shop-commodity > .commodity-detail{
+    margin-top: 10px;
+    padding: 10px 10px 10px 40px;
+}
+/* 商品图片 */
+.shop-commodity > .commodity-detail> a{
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin-right: 5px;
+    float: left;
+    position: absolute;
+}
+.shop-commodity > .commodity-detail> a img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+/* 之前这里加了个 float: right;导致两个商品页重叠了 */
+.shop-commodity > .commodity-detail> .description{
+   
+    padding-left: 90px;
+}
+.shop-commodity > .commodity-detail> .description > a{
+    font-size: 12px;
+}
+.shop-commodity > .commodity-detail> .description > .price{
+    margin-top: 5px;
+    font-size: 12px;
+}
+.shop-commodity > .commodity-detail> .description > .option{
+    width: 100%;
+    height: 24px;
+    margin-top: 5px;
+}
+/* 选择数量 */
+.shop-commodity > .commodity-detail> .description > .option>.choose{
+    float: left;
+}
+.shop-commodity > .commodity-detail> .description > .option>.choose > .sub{
+    width: 32px;
+    height: 24px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    display: block;
+    float: left;
+}
+.shop-commodity > .commodity-detail> .description > .option>.choose > .num{
+    width: 32px;
+    height: 24px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    float: left;
+}
+.shop-commodity > .commodity-detail> .description > .option>.choose > .add{
+    width: 32px;
+    height: 24px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    display: block;
+    float: left;
+}
+/* 删除 */
+.shop-commodity > .commodity-detail> .description > .option > .delete{
+    float: right;
+}
+.shop-commodity > .commodity-detail> .description > .option > .delete> .delete-top{
+    width: 20px;
+    height: 5px;
+    background: url("../imgs/delete_up.png") no-repeat;
+    background-size: 20px 5px;
+    margin-left: -1px;
+}
+.shop-commodity > .commodity-detail> .description > .option > .delete> .delete-bottom{
+    width: 18px;
+    height: 18px;
+    background: url("../imgs/delete_down.png") no-repeat;
+    background-size: 18px 18px;
+    margin-top: -3px;
+}
+/* 结算 */
+#amount{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.8)
+}
+#amount > .check-all{
+    width: 90px;
+    height: 50px;
+    position: absolute;
+}
+#amount > .check-all > .check{
+    position: absolute;
+    top: 12px;
+    left: 20px;
+}
+#amount > .check-all > span{
+    color: #fff;
+    display: block;
+    padding-left: 45px;
+    padding-top: 12px;
+    font-size: 12px;
+}
+
+#amount > .sum-info{
+    padding-left: 90px;
+    color: #fff;
+    height: 50px;
+    margin-top: 5px;
+}
+#amount > .sum-info > .sum{}
+#amount > .sum-info > .other{
+    font-size: 10px;
+    margin-top: 5px;
+}
+#amount > .sum-submit{
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: crimson;
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#amount > .sum-submit > span{
+    font-size: 14px;
+}
+
+/* 弹出层 */
+#wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+}
+#wrap > .popups{
+    width: 85%;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding:0 5%;
+}
+#wrap > .popups > .popups-warm{
+    text-align: center;
+    font-size: 16px;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+    color: #666;
+}
+#wrap > .popups > .popups-bottom{
+  
+    margin-bottom: 5px;
+}
+#wrap > .popups > .popups-bottom > .cancel{
+    float: left;
+    width: 40%;
+    height: 35px;
+    line-height: 35px;
+    margin-right: 10%;
+    margin-left: 15px;
+    margin-bottom: 7px;
+    border-radius: 5px;
+    text-align: center;
+    color: #888;
+    border: 1px solid #e0e0e0;
+}
+#wrap > .popups > .popups-bottom > .sure{
+    float: left;;
+    width: 40%;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: crimson;
+    color: #fff;
+    border: 1px solid #e0e0e0
 }

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header id="jd-header" class="cart-header" >
+    <header id="jd-header" class="cart-header">
         <a href="">
             <i class="icon-back"></i>
         </a>
@@ -20,18 +20,177 @@
             <img src="imgs/jd-header-shortcut.png" alt="" class="jd-header-shortcut">
         </a>
     </header>
+    <!-- 安全提示 -->
     <section id="safe-remind">
         <p>您正在安全购物环境中，请放心购物</p>
     </section>
-    <section id="info-detail">
+    <!-- 加入购物车的商品信息 -->
+    <section id="detail-info">
+        <!-- 一个店铺的相关 -->
         <div class="shop">
-            <div class="check-box">
-                <div class="check"></div>
+            <div class="shop-header">
+                <div class="check-box">
+                    <div class="check"></div>
+                </div>
+                <div class="shop-name">
+                    <img class="logo" src="imgs/buy-logo.png" alt="">
+                    <span class="name">京东自营</span>
+                    <span class="discount">你有优惠可享受</span>
+                </div>
             </div>
-            <div class="shop-name">
-                <img  class="logo" src="imgs/buy-logo.png" alt="">
-                <span class="name">京东自营</span>
-                <span class="discount">你有优惠可享受</span>
+
+            <!-- 店铺一个商品信息 -->
+            <div class="shop-commodity">
+                <div class="commodity-check-box">
+                    <div class="check"></div>
+                </div>
+                <div class="commodity-detail">
+                    <a>
+                        <img src="imgs/cart-commodity.jpg" alt="" class="img">
+                    </a>
+                    <div class="description">
+                        <a href="">希捷（Seagate）Backup Plus睿品1TB USB3.0 2.5英寸 移动硬盘</a>
+                        <p class="price">&yen;379.00</p>
+                        <div class="option">
+                            <div class="choose">
+                                <span class="sub">-</span>
+                                <input type="tel" class="num" value="">
+                                <span class="add">+</span>
+                            </div>
+                            <div class="delete">
+                                <div class="delete-top"></div>
+                                <div class="delete-bottom"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 第二个商品信息 -->
+            <div class="shop-commodity">
+                <div class="commodity-check-box">
+                    <div class="check"></div>
+                </div>
+                <div class="commodity-detail">
+                    <a>
+                        <img src="imgs/cart-commodity.jpg" alt="" class="img">
+                    </a>
+                    <div class="description">
+                        <a href="">希捷（Seagate）Backup Plus睿品1TB USB3.0 2.5英寸 移动硬盘</a>
+                        <p class="price">&yen;379.00</p>
+                        <div class="option">
+                            <div class="choose">
+                                <span class="sub">-</span>
+                                <input type="tel" class="num" value="">
+                                <span class="add">+</span>
+                            </div>
+                            <div class="delete">
+                                <div class="delete-top"></div>
+                                <div class="delete-bottom"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--第二个店铺  -->
+        <div class="shop">
+            <div class="shop-header">
+                <div class="check-box">
+                    <div class="check"></div>
+                </div>
+                <div class="shop-name">
+                    <img class="logo" src="imgs/buy-logo.png" alt="">
+                    <span class="name">京东自营</span>
+                    <span class="discount">你有优惠可享受</span>
+                </div>
+            </div>
+
+            <!-- 店铺一个商品信息 -->
+            <div class="shop-commodity">
+                <div class="commodity-check-box">
+                    <div class="check"></div>
+                </div>
+                <div class="commodity-detail">
+                    <a>
+                        <img src="imgs/cart-commodity.jpg" alt="" class="img">
+                    </a>
+                    <div class="description">
+                        <a href="">希捷（Seagate）Backup Plus睿品1TB USB3.0 2.5英寸 移动硬盘</a>
+                        <p class="price">&yen;379.00</p>
+                        <div class="option">
+                            <div class="choose">
+                                <span class="sub">-</span>
+                                <input type="tel" class="num" value="">
+                                <span class="add">+</span>
+                            </div>
+                            <div class="delete">
+                                <div class="delete-top"></div>
+                                <div class="delete-bottom"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 第二个商品信息 -->
+            <div class="shop-commodity">
+                <div class="commodity-check-box">
+                    <div class="check"></div>
+                </div>
+                <div class="commodity-detail">
+                    <a>
+                        <img src="imgs/cart-commodity.jpg" alt="" class="img">
+                    </a>
+                    <div class="description">
+                        <a href="">希捷（Seagate）Backup Plus睿品1TB USB3.0 2.5英寸 移动硬盘</a>
+                        <p class="price">&yen;379.00</p>
+                        <div class="option">
+                            <div class="choose">
+                                <span class="sub">-</span>
+                                <input type="tel" class="num" value="">
+                                <span class="add">+</span>
+                            </div>
+                            <div class="delete">
+                                <div class="delete-top"></div>
+                                <div class="delete-bottom"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- 选中的商品总计 -->
+    <section id="amount">
+        <div class="check-all">
+            <div class="check" checked></div>
+            <span>全选</span>
+        </div>
+        <div class="sum-info">
+            <p class="sum">
+                合计：&yen;888.00
+            </p>
+            <p class="other">
+                总额：&yen;888.00 返现：&yen;0.00
+            </p>
+        </div>
+        <div class="sum-submit">
+            去结算(
+            <span>0</span>)
+        </div>
+    </section>
+    <!-- 弹出层 -->
+    <section id="wrap">
+        <div class="popups">
+            <div class="popups-warm">您确认删除这件商品吗？</div>
+            <div class="popups-bottom clearfix">
+                <a href="" class="cancel">取消</a>
+                <a href="" class="sure">确定</a>
             </div>
         </div>
     </section>
