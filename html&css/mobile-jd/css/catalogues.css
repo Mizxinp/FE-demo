@@ -10,18 +10,18 @@ body{
 #commodity-main{
     width: 100%;
     height: 100%;
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    padding-top: 30px;
     position: relative;
 }
 #commodity-main > .commodity-list{
     width: 86px;
     height: 100%;
-    overflow: hidden;
-    margin-right: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-
+    overflow: hidden;  
+    float: left;
+}
+#commodity-main > .commodity-list ul{
+    width: 86px;
 }
 #commodity-main > .commodity-list li{
     width: 86px;
@@ -33,16 +33,17 @@ body{
     color: #f00;
 }
 #commodity-main > .commodity-detail{
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     overflow: hidden;
-    padding-left: 86px;
+    /* padding-left: 86px; */
 }
 #commodity-main > .commodity-detail .commodity-detail-box{
+    width: 101%;
     padding: 10px 12px;
 }
 #commodity-main > .commodity-detail  .commodity-detail-banner img{
-   
+   display: block;
     width: 100%;
 }
 #commodity-main > .commodity-detail  .hot-catagory{
