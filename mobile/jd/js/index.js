@@ -26,8 +26,9 @@ function headScroll() {
     }
 }
 
-/* 秒杀倒计时 */
+/* 秒杀部分 */
 function seckilling() {
+    // 倒计时
     var seckilling = document.querySelectorAll('.count-down');
     console.log(seckilling.length)
     //设置倒计时时间
@@ -50,7 +51,7 @@ function seckilling() {
         if (time <= 0) {
             clearInterval(timer);
         }
-    }, 1000)
+    }, 1000)    
 }
 
 /* 轮播图效果 */
