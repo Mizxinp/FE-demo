@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/public/lib/bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="/public/css/main.css">
+  <title>Document</title>
+
+</head>
+
+<body>
+  <div class="header container">
+    <div class="page-header">
+      <h1>程序员社区</h1>
+      <a class="btn btn-success" href="/post">发表留言</a>
+    </div>
+  </div>
+  <div class="comments container">
+    <ul class="list-group">
+      {{each comments}}
+      <li class="list-group-item">{{$value.name}}说：{{$value.message}} <span class="float-right">{{$value.dateTime}}</span></li>
+      {{ /each }}
+    </ul>
+  </div>
+</body>
+</html>
