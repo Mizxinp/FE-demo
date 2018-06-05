@@ -1,16 +1,15 @@
 {
-  "name": "feetback-express",
+  "name": "feedback",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "art-template": "^4.12.2",
-    "express-art-template": "^1.0.1"
+    "bootstrap": "^4.1.1"
   }
 }

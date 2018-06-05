@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="/public/lib/bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="/public/lib/node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="/public/css/main.css">
   <title>Document</title>
 
@@ -20,7 +20,7 @@
   <div class="comments container">
     <ul class="list-group">
       {{each comments}}
-      <li class="list-group-item">{{$value.name}}说：{{$value.message}} <span class="float-right">{{$value.dateTime}}</span></li>
+      <li class="list-group-item">{{$value.name}}说：{{$value.message}} <span class="pull-right">{{$value.dateTime}}</span></li>
       {{ /each }}
     </ul>
   </div>
